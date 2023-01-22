@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #080808;
+    color: #fff;
+}
+/* HEADER */
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+#logo{
+    width: 200px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+    padding: 10px 0;
+    position: relative;
+}
+
+
+nav ul li a:hover::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #f00;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    animation: border_anim 0.5s linear ;
+}
+
+@keyframes border_anim {
+	from{
+		width: 0%;
+	}
+    to{
+        width: 100%;
+    }
+
+}
+
+
+#header-text{
+    margin-top: 30%;
+    font-size: 30px;
+    width: 60%;
+}
+
+#header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+#header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.name-span{
+color: #ff004f;
+}
+
+
+/* Sobre Mim */
+
+#sobre{
+    padding:  0 80px;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sobre-col-1{
+    flex-basis: 33%;
+}
+
+#sobre-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+#sobre-col-2{
+    flex-basis: 60%;
+}
+
+#subtitulo{
+    font-size: 60px;
+    font-size: 600;
+    color: #fff;
+}
+
+#sobre-mim-texto{
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.tab-titulos{
+    display: flex;
+    margin: 20px 0 40px;
+    justify-content: space-around;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links.link-ativo::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: #ababab;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    animation: border_anim 0.5s linear ;
+}
+
+@keyframes border_anim {
+	from{
+		width: 0%;
+	}
+    to{
+        width: 50%;
+    }
+
+}
+
+
+.habilidades-aprendidas{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.habilidades-aprendidas img{
+    width: 80px;
+}
+
+
+.linguagem{
+    position: relative;
+    left: 12px;
+}
+
+.habilidades-aprendidas + .habilidades-aprendidas p{
+    position: relative;
+    right: 12px;
+}
+
+
+
+#educacao{
+    line-height: 2.25;
+    display: none;
+}
+
+#educacao p span{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+
